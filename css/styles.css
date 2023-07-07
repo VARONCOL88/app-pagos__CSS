@@ -211,8 +211,35 @@ img {
 }
 
 .seguridad {
-    padding: 10rem 0;
-    background-color: var(--primario);
+    padding: 20rem 0;
+    background-color: var(--primario); 
+    position: relative; 
+    margin: 10rem 0;  
+    overflow: hidden;
+}
+
+.seguridad::before,
+.seguridad::after {
+    background-color: var(--blanco);
+    content: '';
+    height: 20rem;
+    width: 110%;
+    position: absolute;   
+}
+
+.seguridad::before {
+    top: 0;
+    left: 0;
+    transform: rotate(3deg);
+    margin-top: -10rem;
+}
+
+.seguridad::after {
+    bottom: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+   
+    
 }
 
 .seguridad__heading {
